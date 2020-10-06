@@ -1,0 +1,22 @@
+{
+  "name": "video-proxy",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ev3-showcase/video-proxy.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ev3-showcase/video-proxy/issues"
+  },
+  "homepage": "https://github.com/ev3-showcase/video-proxy#readme",
+  "dependencies": {
+    "node-media-server": "^2.2.4"
+  }
+}
