@@ -7,3 +7,11 @@ services:
       - '1935:1935'
       - '8000:8000'
     user: '1000'
+
+  ffmpeg:
+    depends_on:
+      - 'service'
+    image: linuxserver/ffmpeg
+    volumes:
+      - ./test_data:/work
+    command: ' -stream_loop -1 -i /work/test.mp4 -c:v libx264 -preset veryfast -maxrate 6000k -bufsize 100000k -pix_fmt yuv420p -g 50 -fflags +genpts  -f flv rtmp://service:1935/live/car-cloudhub'
