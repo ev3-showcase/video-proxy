@@ -16,8 +16,8 @@ const config = {
   },
   auth: {
     api: false,
-    api_user: 'admin',
-    api_pass: 'admin',
+    api_user: 'cloudhub',
+    api_pass: 'cloudhub',
     play: false,
     publish: false,
   },
