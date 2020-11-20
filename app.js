@@ -1,6 +1,8 @@
 const NodeMediaServer = require('node-media-server');
 const process = require('process');
 
+// https://github.com/illuspas/Node-Media-Server
+
 const config = {
   logType: 2,
   rtmp: {
@@ -15,12 +17,23 @@ const config = {
     allow_origin: '*',
   },
   auth: {
-    api: false,
+    api: true,
     api_user: 'cloudhub',
     api_pass: 'cloudhub',
     play: false,
-    publish: false,
+    publish: true,
+    secret: 'nodemedia2017privatekey',
   },
+  // trans: {
+  //   ffmpeg: '/usr/local/bin/ffmpeg',
+  //   tasks: [
+  //     {
+  //       app: 'live',
+  //       mp4: true,
+  //       mp4Flags: '[movflags=frag_keyframe+empty_moov]',
+  //     }
+  //   ]
+  // }
 };
 
 var nms = new NodeMediaServer(config);
