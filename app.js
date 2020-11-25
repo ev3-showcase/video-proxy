@@ -19,10 +19,10 @@ const config = {
   auth: {
     api: true,
     api_user: 'cloudhub',
-    api_pass: 'cloudhub',
+    api_pass: process.env.API_PASS || 'cloudhub',
     play: false,
     publish: true,
-    secret: 'nodemedia2017privatekey',
+    secret: process.env.API_KEY || 'nodemedia2017privatekey',
   },
   // trans: {
   //   ffmpeg: '/usr/local/bin/ffmpeg',
