@@ -1,5 +1,9 @@
 # video-proxy
 
+Connect to it via `/admin` 
+Username: `cloudhub`
+Password: Set via `ENV_PASS`
+
 Deploy on Azure: 
 ```bash
 az group create --name test --location easteurope
